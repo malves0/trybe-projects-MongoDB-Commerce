@@ -20,8 +20,8 @@ Back-end:
 1. Abra o terminal e conecte-se à sua instância local do **MongoDB**.
 
 2. Na raiz do diretório do projeto, execute o seguinte comando que fará a restauração da base de dados `commerce`:
-   ```sh
-   DBNAME=commerce ./scripts/resetdb.sh assets/produtos
+   ```
+   mongorestore commerce/
    ```
 
 - A execução desse script criará um banco de dados chamado `commerce` e importará os dados para a coleção `produtos`.
